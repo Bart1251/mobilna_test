@@ -5,19 +5,19 @@
 
     <ContentPage Title="KOŚCI">
         <StackLayout BackgroundColor="Beige">
-            <Label Text="Gra w kości. Autor Pesel" BackgroundColor="Brown" FontSize="Large" TextColor="White" Padding="3" Margin="0, 10"/>
-            <Button Text="Rzuć kośćmi" BackgroundColor="Chocolate" HorizontalOptions="Center" TextColor="White"/>
+            <Label Text="Gra w kości. Autor Pesel" BackgroundColor="Brown" FontSize="30" TextColor="White" Padding="3" Margin="0, 10"/>
+            <Button Text="Rzuć kośćmi" BackgroundColor="Chocolate" HorizontalOptions="Center" TextColor="White" Clicked="ThrowDices" Margin="10"/>
             <FlexLayout x:Name="dices" HeightRequest="100" BackgroundColor="White">
                 
             </FlexLayout>
             <Label Text="Wynik tego losowania: " x:Name="resultNow" HorizontalOptions="Center" Margin="10"/>
             <Label Text="Wynik gry: " x:Name="result" HorizontalOptions="Center" Margin="10"/>
-            <Button Text="Resetuj wynik" BackgroundColor="Chocolate" HorizontalOptions="Center" TextColor="White"/>
+            <Button Text="Resetuj wynik" BackgroundColor="Chocolate" HorizontalOptions="Center" TextColor="White" Clicked="Reset" Margin="10"/>
         </StackLayout>
     </ContentPage>
     <ContentPage Title="O AUTORZE">
-        <StackLayout>
-            <Label Text='"Gra w kości" - Bartłomiej Więcek' HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+        <StackLayout BackgroundColor="Beige">
+            <Label Text='"Gra w kości" - Bartłomiej Więcek' BackgroundColor="Brown" FontSize="Large" TextColor="White" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
         </StackLayout>
     </ContentPage>
 
